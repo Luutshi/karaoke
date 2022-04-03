@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 0;
+    height: 100vh;
+
+    background-color: #F0F3F4;
+}
+
+div {
+    margin: 8px;
+
+    display: flex;
+    align-items: center;
+}
+
+.lyrics {
+    display: flex;
+    flex-direction: column;
+}

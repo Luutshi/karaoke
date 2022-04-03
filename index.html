@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrics Reader</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <style>
+        #lyrics {
+            display: flex;
+            flex-direction: column;
+            
+            font-size: 1em;
+            width: 50%;
+            height: 50%;
+            overflow:scroll;
+            border: 1px solid black;
+
+            gap: 8px;
+            text-align: center;
+            background-color: #F0F3F4;
+        }
+
+        #title {
+            font-size: 4em;
+            text-decoration: underline;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body id="body">
+    <div>
+        <span id="title"></span>
+    </div>
+
+    <div id="lyrics">
+    </div>
+
+    <div>
+        <!-- Play/Pause buttons-->
+        <div>
+            <div id="pause"><i class="fas fa-pause"></i></div>
+            <div id="play"><i class="fas fa-play"></i></div>
+        </div>
+        <!-- Sound on/off buttons-->
+        <div>
+            <div id="soundOn"><i class="fas fa-volume-up"></i></div>
+            <div id="soundOff"><i class="fas fa-volume-mute"></i></div>
+        </div>
+        <audio id="audio" controls src='Adele-Easy-On-Me-(TrendyBeatz.com).mp3'>Your browser does not support the<code>audio</code> element.</audio>
+    </div>
+</body>
+</html>
